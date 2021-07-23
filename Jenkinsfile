@@ -1,6 +1,6 @@
 #!groovy
 
-node("basenode") {
+node("") {
 
 	stage("stage1") {
 		println "stage1"
