@@ -4,7 +4,7 @@ properties(
 	parameters([
 		string(defaultValue: '', description: 'param1', name: 'param1')
 	])
-])
+)
 
 
 node("") {
