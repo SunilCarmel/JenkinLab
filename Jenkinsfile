@@ -1,9 +1,16 @@
 #!groovy
 
+properties( 
+	parameters([
+		string(defaultValue: '', description: 'param1', name: 'param1')
+	])
+])
+
+
 node("") {
 
 	stage("stage1") {
-		println "stage1"
+		println params.param1
 	}
 
 	stage("stage2") {
