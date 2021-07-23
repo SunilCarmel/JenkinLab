@@ -1,13 +1,5 @@
 #!groovy
 
-properties([gitLabConnection("CON"),
-	parameters([
-		string(defaultValue: '', description: 'Test param 1', name: 'Testparam1'),
-		string(defaultValue: '', description: 'Test param 2', name: 'Testparam2')
-	])
-])
-
-
 node("basenode") {
 
 	stage("stage1") {
